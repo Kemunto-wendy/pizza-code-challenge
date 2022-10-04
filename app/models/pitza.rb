@@ -1,0 +1,2 @@
+class Pitza < ApplicationRecord
+end
