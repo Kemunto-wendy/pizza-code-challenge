@@ -17,14 +17,14 @@ puts 'start'
 end
 
 
-    Pitza.create(names: 'Berber Pizza', ingredients: 'Onions, Cheese, Olive oil, the toppings are covered with another baked piece of dough'
+    Pitza.create(name: 'Berber Pizza', ingredients: 'Onions, Cheese, Olive oil, the toppings are covered with another baked piece of dough'
     )
-    Pitza.create(names: 'Artichoke', ingredients: 'Tomato sauce, Cheese, Artichokes, Roasted bell pepper, Black olives, Onions, Oregano'
+    Pitza.create(name: 'Artichoke', ingredients: 'Tomato sauce, Cheese, Artichokes, Roasted bell pepper, Black olives, Onions, Oregano'
     )
 
-    Pitza.create(names: 'Egg and Cavia', ingredients: 'Mozzarella, Caviar, Egg, Dill, Black pepper'
+    Pitza.create(name: 'Egg and Cavia', ingredients: 'Mozzarella, Caviar, Egg, Dill, Black pepper'
     )
-    Pitza.create(names: 'Hawaiian', ingredients:'Tomato sauce, Cheese, Russian ham, Pineapple, Herbs'
+    Pitza.create(name: 'Hawaiian', ingredients:'Tomato sauce, Cheese, Russian ham, Pineapple, Herbs'
     )
 
 
