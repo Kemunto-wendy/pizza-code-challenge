@@ -16,12 +16,7 @@ puts 'start'
     )
 end
 
-7.times do
-    Restaurant.create(
-    name: Faker::Restaurant.name,
-    address: Faker::Address.full_address
-    )
-end
+
 
 
     Pitza.create(name: 'Berber Pizza', ingredients: 'Onions, Cheese, Olive oil, the toppings are covered with another baked piece of dough'
