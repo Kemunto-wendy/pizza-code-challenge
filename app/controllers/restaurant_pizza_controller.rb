@@ -1,6 +1,10 @@
 class RestaurantPizzaController < ApplicationController
   rescue_from ActiveRecord::RecordInvalid, with: :render_unproccessable_entity_response
 
+  def index
+    restaurant_pizza.RestaurantPizza.all
+    render json:restaurant_pizzas
+  end
 
   def create
       restaurant_pizza= RestaurantPizza.create!(respizza_params)
