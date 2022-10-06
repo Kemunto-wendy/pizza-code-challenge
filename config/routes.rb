@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :restaurants, only: [:index, :show, :create, :update]
+  resources  :restaurants, only: [:index, :show, :create, :update]
+  resources :restaurantpizza, only: [:create]
+  resources :pitza, only: [:index]
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   #get '/crusts/1', to: "crusts#first"
