@@ -5,11 +5,34 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-Crust.create!(flavour: 'Chicken', name:'Kempinski', size: 'larger', price: 8)
-Crust.create!(flavour: 'Beef', name:'VillaRosa', size: 'larger', price: 7)
-Crust.create!(flavour: 'Bacon', name:'Manhattani', size: 'larger', price: 6)
-Crust.create!(flavour: 'Choma', name:'Lapado', size: 'extra larger', price: 6)
 
-Restaurant.create!(location: "Nairobi", service: "perfect", capacity: 400)
-Restaurant.create!(location: "Machakos", service: "perfect", capacity: 300)
-Restaurant.create!(location: "Kisumu", service: "perfect", capacity: 200)
+puts 'start'
+
+10.times do
+    RestaurantPizza.create(
+        price: rand(1..30),
+        pizza_id: rand(1..4),
+        restaurant_id: rand(1..5)
+    )
+end
+
+7.times do
+    Restaurant.create(
+    name: Faker::Restaurant.name,
+    address: Faker::Address.full_address
+    )
+end
+
+
+    Pitza.create(name: 'Berber Pizza', ingredients: 'Onions, Cheese, Olive oil, the toppings are covered with another baked piece of dough'
+    )
+    Pitza.create(name: 'Artichoke', ingredients: 'Tomato sauce, Cheese, Artichokes, Roasted bell pepper, Black olives, Onions, Oregano'
+    )
+
+    Pitza.create(name: 'Egg and Cavia', ingredients: 'Mozzarella, Caviar, Egg, Dill, Black pepper'
+    )
+    Pitza.create(name: 'Hawaiian', ingredients:'Tomato sauce, Cheese, Russian ham, Pineapple, Herbs'
+    )
+
+
+puts 'end'
